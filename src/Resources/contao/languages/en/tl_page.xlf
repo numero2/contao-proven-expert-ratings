@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file datatype="php" original="src/Resources/contao/languages/en/tl_page.php" source-language="en">
+<body>
+    <!-- LEGENDS -->
+    <trans-unit id="tl_page.proven_expert_ratings_legend">
+        <source>Proven Expert Ratings</source>
+    </trans-unit>
+    <!-- FIELDS -->
+    <trans-unit id="tl_page.proven_expert_rating_api_id.0">
+        <source>Proven Expert API-ID</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_api_id.1">
+        <source>Bitte geben Sie die API-ID von Proven Expert ein.</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_api_key.0">
+        <source>Proven Expert API-Schlüssel</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_api_key.1">
+        <source>Bitte geben Sie den API-Schlüssel von Proven Expert ein.</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_name.0">
+        <source>Name</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_name.1">
+        <source>Bitte geben Sie den Namen ein.</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_description.0">
+        <source>Beschreibung</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_description.1">
+        <source>Bitte geben Sie die Beschreibung ein.</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_image.0">
+        <source>Bild</source>
+    </trans-unit>
+    <trans-unit id="tl_page.proven_expert_rating_image.1">
+        <source>Bitte wählen Sie das Bild für das Proven Expert Rating aus.</source>
+    </trans-unit>
+</body>
+</file>
+</xliff>

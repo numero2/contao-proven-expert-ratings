@@ -1,0 +1,26 @@
+{
+    "name": "numero2/contao-proven-expert-ratings",
+    "type": "contao-bundle",
+    "license": "proprietary",
+    "require": {
+        "contao/core-bundle": "^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "numero2\\ProvenExpertRatingsBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "numero2\\ProvenExpertRatingsBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        public: true
+
+    numero2_proven_expert_ratings.listener.kernel_terminate.rating:
+        class: numero2\ProvenExpertRatingsBundle\EventListener\KernelTerminate\RatingListener
+        arguments:
+            - '@request_stack'
+            - '@contao.routing.response_context_accessor'
+            - '@contao.assets.files_context'
+            - '@http_client'
+        tags:
+            - { name: kernel.event_listener, event: kernel.terminate }
