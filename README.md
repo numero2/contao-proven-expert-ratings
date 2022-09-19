@@ -6,7 +6,7 @@ Contao Proven Expert ratings
 About
 --
 
-Fetches your rating from proven expert and add them to the json ld.
+Fetches your rating from Proven Expert and adds it as a Rich Snippet to Contao's JSON-LD.
 
 System requirements
 --
