@@ -94,7 +94,7 @@ class RatingListener {
 
         // cache
         $cache = new FilesystemAdapter();
-        $cachedData = $cache->getItem('contao_proven_expert_rating:'.$root->id);
+        $cachedData = $cache->getItem('contao_proven_expert_rating__'.$root->id);
 
         // mark the cache to be updated
         if( !$cachedData->isHit() ) {
@@ -170,19 +170,27 @@ class RatingListener {
         }
 
         $cache = new FilesystemAdapter();
-        $cachedData = $cache->getItem('contao_proven_expert_rating:'.$root->id);
+        $cachedData = $cache->getItem('contao_proven_expert_rating__'.$root->id);
 
         // mark the cache to be updated
         if( !$cachedData->isHit() ) {
             return;
         }
 
+        $imagePath = null;
+        $image = null;
         $image = FilesModel::findById($root->proven_expert_rating_image);
-        $host = ($request->isSecure() ? 'https://' : 'http://') . $request->server->get('HTTP_HOST') . '/';
-        if( $this->filesContext->getStaticUrl() ) {
-            $host = $this->filesContext->getStaticUrl();
+
+        if( $image ) {
+
+            $host = ($request->isSecure() ? 'https://' : 'http://') . $request->server->get('HTTP_HOST') . '/';
+            if( $this->filesContext->getStaticUrl() ) {
+                $host = $this->filesContext->getStaticUrl();
+            }
+
+            $imagePath = $host . $image->path;
         }
-        $imagePath = $host . $image->path;
+
         $rating = $cachedData->get();
 
         $jsonLd = [
